@@ -15,7 +15,7 @@
 
         header {
             background-color: transparent;
-            position: fixed;
+            position: static;
             top: 0;
             right: 0;
             left: 0;
@@ -103,6 +103,9 @@
             font-family: 'Playball', cursive;
             color: #ffc0cb; /* Peach color */
         }
+        .product-price {
+    margin-bottom: 10px; /* Adjust this value for the desired spacing */
+}
 
         .category {
             margin-bottom: 40px;
@@ -125,13 +128,14 @@
         }
 
         .product {
-            margin: 10px;
-            padding: 20px;
-            border: 1px solid #ddd; /* Add a border for better visibility */
-            border-radius: 10px;
-            flex: 0 0 calc(25% - 20px); /* 4 products per row, adjust as needed */
-            position: relative;
-        }
+    margin: 10px;
+    padding: 20px;
+    padding-bottom: 40px; /* Add padding to the bottom for spacing */
+    border: 1px solid #ddd; /* Add a border for better visibility */
+    border-radius: 10px;
+    flex: 0 0 calc(25% - 20px); /* 4 products per row, adjust as needed */
+    position: relative; /* Keep this to allow absolute positioning of the button */
+}
 
         .product img {
             width: 100%;
@@ -235,9 +239,11 @@
                 <li><a href="#products">Products</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="javascript:void(0);" onclick="toggleCart()">Shopping Cart</a></li>
-
+                <button onclick="toggleDarkMode()" id="dark-mode-toggle" class="toggle-button"></button>
             </ul>
         </nav>
+        
+
     </header>
 
     <main id="main-content">
@@ -305,15 +311,14 @@
     <div class="product">
         <img src="images/AVC.jpg" alt="AyurVital Complex Serum">
         <h4>AyurVital Complex</h4>
-        <p>Price: ₹590</p>
-        <button class="add-to-cart" onclick="addToCart('AyurVital Complex Serum',590)">Add to Cart</button>
-
+        <p class="product-price">Price: ₹590</p> <!-- Added class here -->
+        <button class="add-to-cart" onclick="addToCart('AyurVital Complex Serum', 590)">Add to Cart</button>
     </div>
 
     <div class="product">
         <img src="images/NOYS.jpg" alt="Nectar of Youth Serum">
         <h4>Nectar of Youth Serum</h4>
-        <p>Price: ₹600</p>
+        <p class="product-price">Price: ₹600</p>
         <button class="add-to-cart" onclick="addToCart('Nectar of Youth Serum',600)">Add to Cart</button>
 
     </div>
@@ -326,7 +331,7 @@
     <div class="product">
         <img src="images/peach tint.jpg" alt="peach tint">
         <h4>Peach Tint</h4>
-        <p>Price: ₹250</p>
+        <p class="product-price">Price: ₹250</p>
         <button class="add-to-cart" onclick="addToCart('peach tint',250)">Add to Cart</button>
 
     </div>
@@ -334,7 +339,7 @@
     <div class="product">
         <img src="images/purple tint.jpg" alt="Purple Tint">
         <h4>Purple Magic Tint</h4>
-        <p>Price: ₹250</p>
+        <p class="product-price">Price: ₹250</p>
         <button class="add-to-cart" onclick="addToCart('Purple Tint',250)">Add to Cart</button>
 
     </div>
@@ -342,7 +347,7 @@
     <div class="product">
         <img src="images/cutesy pink.jpg" alt="Cutesy Pink">
         <h4>Cutesy Pink</h4>
-        <p>Price: ₹250</p>
+        <p class="product-price">Price: ₹250</p>
         <button class="add-to-cart" onclick="addToCart('Cutesy Pink',250)">Add to Cart</button>
 
     </div>
@@ -355,7 +360,7 @@
         <div class="product">
             <img src="images/pine.jpg" alt="PurifyZen AyurCleanse">
             <h3>PurifyZen AyurCleanse</h3>
-            <p>Price: ₹280</p>
+            <p class="product-price"></p>Price: ₹280</p>
             <button class="add-to-cart" onclick="addToCart('PurifyZen AyurCleanse',280)">Add to Cart</button>
 
         </div>
@@ -363,7 +368,7 @@
         <div class="product">
             <img src="images/bluee.jpg" alt="AyurFresh Renewal Wash">
             <h3>AyurFresh Renewal Wash</h3>
-            <p>Price: ₹280</p>
+            <p class="product-price">Price: ₹280</p>
             <button class="add-to-cart" onclick="addToCart('AyurFresh Renewal Wash',280)">Add to Cart</button>
 
         </div>
@@ -371,7 +376,7 @@
         <div class="product">
             <img src="images/pinkk.jpg" alt="Serenity Cleanse Gel">
             <h3>Serenity Cleanse Gel</h3>
-            <p>Price: ₹280</p>
+            <p class="product-price"></p>Price: ₹280</p>
             <button class="add-to-cart" onclick="addToCart('Serenity Cleanse Gel',280)">Add to Cart</button>
 
         </div>
@@ -383,7 +388,7 @@
     <div class="product">
         <img src="images/green.jpg" alt="AyurSoft Silk Cream">
         <h3>AyurSoft Silk Moisturizer</h3>
-        <p>Price: ₹380</p>
+        <p class="product-price">Price: ₹380</p>
         <button class="add-to-cart" onclick="addToCart('AyurSoft Silk Moisturizer',380)">Add to Cart</button>
 
     </div>
@@ -391,7 +396,7 @@
     <div class="product">
         <img src="images/cream.jpg" alt="Divine Hydration Balm">
         <h3>Divine Hydration Moisturizer</h3>
-        <p>Price: ₹380</p>
+        <p class="product-price">Price: ₹380</p>
         <button class="add-to-cart" onclick="addToCart('Divine Hydration Moisturizer',380)">Add to Cart</button>
 
     </div>
@@ -399,7 +404,7 @@
     <div class="product">
         <img src="images/saffron.jpg" alt="NourishLuxe Moisture">
         <h3>NourishLuxe Moisturizer</h3>
-        <p>Price: ₹380</p>
+        <p class="product-price">Price: ₹380</p>
         <button class="add-to-cart" onclick="addToCart('NourishLuxe Moisturizer',380)">Add to Cart</button>
 
     </div>
@@ -408,7 +413,7 @@
     <div class="product">
         <img src="images/cita.jpg" alt="Sacred Silk Elixir">
         <h3>Sacred Silk Elixir</h3>
-        <p>Price: ₹380</p>
+        <p class="product-price">Price: ₹380</p>
         <button class="add-to-cart" onclick="addToCart('Sacred Silk Elixir',380)">Add to Cart</button>
 
     </div>
@@ -451,15 +456,15 @@
     <script>
         // Initialize an empty array to store added items
         const cartItemsArray = [];
-    
+
         function addToCart(productName, productPrice) {
             const cartItems = document.getElementById('cart-items');
             const totalQuantity = document.getElementById('total-quantity');
-    
+
             // Create a new list item for the cart
             const listItem = document.createElement('li');
             listItem.textContent = `${productName} - ₹${productPrice}`;
-    
+
             // Create a delete button for the item
             const deleteButton = document.createElement('button');
             deleteButton.textContent = 'Delete';
@@ -469,61 +474,84 @@
                 if (index !== -1) {
                     cartItemsArray.splice(index, 1);
                 }
-    
+
                 // Remove the item from the cart
                 cartItems.removeChild(listItem);
-    
+
                 // Update the total quantity
                 totalQuantity.textContent = parseInt(totalQuantity.textContent) - 1;
-    
+
                 // Update and display the cart details
                 updateCartDetails();
             };
-    
+
             // Append the delete button to the list item
             listItem.appendChild(deleteButton);
-    
+
             // Append the list item to the cart
             cartItems.appendChild(listItem);
-    
+
             // Update the total quantity
             totalQuantity.textContent = parseInt(totalQuantity.textContent) + 1;
-    
+
             // Add the item to the array
             cartItemsArray.push({ name: productName, price: parseFloat(productPrice) });
-    
+
             // Update and display the cart details
             updateCartDetails();
-    
+
             console.log(`Added ${productName} to the cart`);
         }
-    
+
         // Function to update and display the cart details
         function updateCartDetails() {
             const cartTotalPrice = document.getElementById('total-price');
             const cartTotalQuantity = document.getElementById('total-quantity');
-            const cartList = document.getElementById('cart-items');
-    
+
             // Calculate total price and update the HTML
             const totalPrice = cartItemsArray.reduce((total, item) => total + item.price, 0);
             cartTotalPrice.textContent = totalPrice.toFixed(2);
-    
+
             // Update total quantity
             cartTotalQuantity.textContent = cartItemsArray.length;
         }
+
         // Function to toggle the visibility of the cart
         function toggleCart() {
             const cart = document.getElementById('cart');
             cart.classList.toggle('show-cart');
-    
+
             // Update and display the cart details when opening the cart
             if (cart.classList.contains('show-cart')) {
                 updateCartDetails();
             }
         }
+
         function checkout() {
-        // Implement your checkout logic here
-        alert('Checkout button clicked! Implement your checkout logic.');
-    }
+            // Implement your checkout logic here
+            alert('Checkout button clicked! Implement your checkout logic.');
+        }
+
+        // Dark mode toggle logic
+        const toggleButton = document.getElementById('dark-mode-toggle');
+
+        // Check for saved user preference
+        if (localStorage.getItem('dark-mode') === 'enabled') {
+            document.body.classList.add('dark-mode');
+        }
+
+        // Toggle dark mode
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+
+            // Save user preference
+            if (document.body.classList.contains('dark-mode')) {
+                localStorage.setItem('dark-mode', 'enabled');
+            } else {
+                localStorage.setItem('dark-mode', 'disabled');
+            }
+        });
+
     </script>
+</body>
 </html>
