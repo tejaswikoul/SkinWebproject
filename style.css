@@ -6,15 +6,13 @@ body {
 
 header {
     background-color: transparent;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1000;
+    position: static; /* Change fixed to static */
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 15px 20px;
+    z-index: 1000; /* This may not be necessary for static positioning */
+    height : .5px;
 }
 
 .logo {
@@ -130,8 +128,74 @@ footer {
     color: #fff;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
+    position: static;
     bottom: 0;
     right: 0;
     left: 0;
+}
+/* Dark Mode Styles */
+body.dark-mode {
+    background-color: #171515; /* Dark background */
+    color: white; /* Light text color */
+}
+
+
+nav a.dark-mode {
+    color: #fff; /* Light color for links in dark mode */
+}
+
+.product.dark-mode {
+    background-color: #555; /* Dark mode product background */
+    border: 1px solid #777; /* Dark mode border */
+}
+
+#cart.dark-mode {
+    background-color: #444; /* Dark mode cart background */
+    color: #fff; /* Light text color in cart */
+}
+
+#about.dark-mode {
+    background-color: #444; /* Dark background for About Us */
+    color: #fff; /* Light text color */
+}
+
+#about h2.dark-mode {
+    color: #ffc0cb; /* Peach color for dark mode header */
+}
+
+#about p.dark-mode {
+    color: #ddd; /* Light gray for paragraph text in dark mode */
+}
+
+/* Add any other dark mode styles needed for your elements */
+.toggle-button {
+width: 25px; /* Set button width */
+height: 25px; /* Set button height */
+border-radius: 50%; /* Make button circular */
+background-color: #454e57; /* Button color */
+color: white; /* Text color for button */
+border: none; /* Remove border */
+cursor: pointer; /* Change cursor to pointer */
+font-size: 18px; /* Font size for button text */
+display: flex; /* Flexbox to center text */
+align-items: center; /* Center text vertically */
+justify-content: center; /* Center text horizontally */
+}
+.header {
+    position: relative;
+    background-color: #333; /* Ensure background is visible */
+    padding: 15px; /* Add some padding */
+}
+
+.header a {
+    color: grey; /* Change this to a contrasting color */
+    text-decoration: none; /* Remove underline */
+    margin: 0 15px; /* Adjust spacing between items */
+}
+
+.header a:hover {
+    text-decoration: underline; /* Optional: Add hover effect */
+}
+.dark-mode header {
+    background-color: #1e1e1e; /* Dark mode header background */
 }
