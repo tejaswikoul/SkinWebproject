@@ -1,31 +1,14 @@
 # 𝓢𝓲𝓷𝓬𝓪 𝓢𝓴𝓲𝓷𝓬𝓪𝓻𝓮 𝓦𝓮𝓫𝓼𝓲𝓽𝓮 🌿🌿
 
 
-# Getting Started  
-🚀 Explore Now: Visit our Sinca Skincare website and experience the magic of Ayurvedic skincare:
-
-[🌿 Explore Sinca Skincare Website] (https://saloni141103.github.io/sinca-skincare-ecommerce-website/)
-
-🔗 [Direct Link to the Website] https://saloni141103.github.io/sinca-skincare-ecommerce-website/
-
-Feel free to share your thoughts and let your skin embark on a journey of radiance and wellness!
-
-
-
-## Sinca Skincare Website
-
-<p align="center">
-  <img src="images/ayurvedic-logo.png" alt="Sinca Ayurvedic">
-</p>
-
 ### Introduction
 
-Welcome to the Sinca Skincare Website, where ancient Ayurvedic traditions meet modern skincare solutions. This project showcases our commitment to providing users with a seamless and delightful experience as they explore our range of Ayurvedic skincare products. The website is designed to be visually appealing, user-friendly, and informative, reflecting the essence of Sinca Skincare.
+Welcome to the Ayurvedic Skincare Website, where ancient Ayurvedic traditions meet modern skincare solutions. This project showcases our commitment to providing users with a seamless and delightful experience as they explore our range of Ayurvedic skincare products. The website is designed to be visually appealing, user-friendly, and informative, reflecting the essence of  Skincare.
 
 ## Features Highlights
 
 ### 🌟 Ancient Wisdom, Modern Solutions
-Explore the power of Ayurveda with our meticulously crafted skincare products. Sinca Skincare combines traditional wisdom with modern science to offer a unique and effective range of serums, lip balms, cleansers, moisturizers, and more.
+Explore the power of Ayurveda with our meticulously crafted skincare products. Ayurvedic Skincare combines traditional wisdom with modern science to offer a unique and effective range of serums, lip balms, cleansers, moisturizers, and more.
 
 <p align="center">
   <img src="images/ayurvedic-ingredients.jpg" alt="Ayurvedic Ingredients" width="300">
@@ -68,16 +51,4 @@ Experience the beauty of skincare with our visually appealing design. The websit
 - **Payment Integration**: (Specify the payment gateway used)
 
 
-## Getting Started
-
-🚀 **Explore Now:**
-Visit our Sinca Skincare website and experience the magic of Ayurvedic skincare:
-
-[**🌿 Explore Sinca Skincare Website**]
-(https://saloni141103.github.io/sinca-skincare-ecommerce-website/)
-
-🔗 [Direct Link to the Website]
-https://saloni141103.github.io/sinca-skincare-ecommerce-website/
-
-Feel free to share your thoughts and let your skin embark on a journey of radiance and wellness!
 
